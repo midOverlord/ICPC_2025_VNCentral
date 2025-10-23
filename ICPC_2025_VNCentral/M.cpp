@@ -46,8 +46,7 @@ void WONDERFUL() {
             pair<int, int> pre = {xb, yb};
             for(int i = 0; i < pb.size(); i++) {
                 cur = cur + cnt * f(pre.st, pre.nd, a[pb[i]].st, a[pb[i]].nd);
-                pre = a[pb[i]];
-                cnt++;
+                pre = a[pb[i]]; cnt++;
             }
             cur += cnt * f(pre.st, pre.nd, xb, yb);
             resB = min(resB, cur);
@@ -62,3 +61,4 @@ __T1_VO_DICH__ {
     WONDERFUL();
     return 0;
 }
+
